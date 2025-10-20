@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Special Gothic Expanded One", sans-serif;
+    background-color: #000000;
+}
+
+header {
+    background: rgb(0, 0, 0);
+}
+
+header h1 {
+    text-align: center;
+    color: rgb(237, 237, 110);
+    padding: 20px 0;
+}
+
+nav ul {
+    list-style: none;
+    background: #121212;
+    text-align: center;
+}
+
+nav li {
+    display: inline-block;
+    position: relative;
+}
+
+nav a {
+    display: block;
+    color: white;
+    padding: 10px 16px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background: rgb(59, 58, 61);
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    background: #121212;
+    min-width: 160px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown li {
+    display: block;
+}
+
+.dropdown a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+}
+
+.dropdown a:hover {
+    background: rgb(59, 58, 61);
+}
+
+nav li:hover .dropdown {
+    display: block;
+}
+
+.carousel-item {
+    height: 100vh;
+    min-height: 300px;
+}
+
+.carousel-caption {
+    bottom: 220px;
+    z-index: 2;
+}
+
+.carousel-caption h5 {
+    font-size: 45px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 25px;
+}
+
+.carousel-caption p {
+    width: 60%;
+    margin: auto;
+    font-size: 18px;
+    line-height: 1.9;
+}
+
+.carousel-inner::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: black;
+    opacity: 0.5;
+}
+
+.carousel-item img {
+    filter: brightness(50%);
+}
+
+.card-img-top {
+    position: relative;
+}
+
+.card-img-top::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.card-body {
+    position: relative;
+    z-index: 2;
+}
+
+h2 {
+    color: white;
+}
+
+footer {
+    background-color: #000000;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 24px;
+    font-family: "Special Gothic Expanded One", sans-serif;
+}
+
+footer a:hover {
+    opacity: 0.7;
+}
+
+@media (min-width: 576px) {
+    .carousel-caption h5 {
+        font-size: 50px;
+    }
+
+    .carousel-caption p {
+        font-size: 20px;
+    }
+
+    .card-title {
+        font-size: 18px;
+    }
+
+    .card-text {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 768px) {
+    .carousel-caption h5 {
+        font-size: 55px;
+    }
+
+    .carousel-caption p {
+        font-size: 22px;
+    }
+
+    .card-title {
+        font-size: 20px;
+    }
+
+    .card-text {
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 992px) {
+    .carousel-caption h5 {
+        font-size: 60px;
+    }
+
+    .carousel-caption p {
+        font-size: 24px;
+    }
+
+    .card-title {
+        font-size: 22px;
+    }
+
+    .card-text {
+        font-size: 20px;
+    }
+}
